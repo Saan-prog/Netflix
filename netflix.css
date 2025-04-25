@@ -1,0 +1,556 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.body{
+    background-color: black;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;}
+.mainNetflixContainer{
+    /*border:2px solid red;*/
+    
+    
+}
+/* Netflix logo styling 
+/*.netflixlogo img {
+    width: 15%;
+  }*/
+  
+  /* Adjust the navbar height 
+  .navbar {
+    height: 10vh;
+    padding: 0.5rem 2rem;
+  }*/
+  
+  /* Button styling adjustments 
+  .btn-outline-light {
+    background: transparent;
+    border: 1px solid grey;
+    color: white;
+  }
+  
+  .btn-danger {
+    width: 120px;
+    height: 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1rem;
+  }*/
+  
+
+/*Navigation Bar*/
+.navContainer {
+    /*border: 2px solid green;*/
+    display: flex;
+    height:10vh;
+    }
+.navBarButtonContainer{
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    height:100%;
+}
+.navBarleftSection {
+   /* border: 2px solid blue;*/
+    width: 50%; /* Example width */
+    }
+
+.netflixlogo {
+    width:29%;
+    }
+
+.navBarrightSection {
+    /*border: 2px solid yellowgreen;*/
+    width: 50%; 
+    }
+.languagebutton {
+        display: flex;
+        padding:0.2rem 0.9rem;
+        height:30px;
+        border-radius: 50PX;
+        background: transparent;
+        border:1px solid white;
+        outline:none;
+        color:white;
+        margin-right: 10px;
+        
+}
+.languagebutton p {
+    margin-left:5px;
+}
+.SingInButtonContainer .signinbutton {
+    padding: 0.2rem 0.9rem;
+    height: 30px;
+    width: 120px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    margin-left: 10px;
+}
+
+@media (max-width:1488px){
+.navcontainer{
+    height:10vh;
+    z-index: 1;
+}
+    
+}
+
+
+/*banner*/
+.backgroundcontainer{
+    background-image:url(./images/Netflix\ bg.jpg);
+    filter:blur(40px); 
+    height:100vh;
+    position:relative;
+}
+.pinkoverlay{
+    background-color: rgba(71, 1, 13, 0.404);
+    height:100%;
+    width:100%;
+}
+.contentcontainer{
+    position: absolute;
+    top:0; 
+    background-color:rgba(0,0,0,.5);
+    padding:1rem 2rem;
+}
+.bannerSection{
+    /*border:2px solid red;*/
+    height:75vh;
+    background-image: url(./images/Netflix\ bg.jpg);
+    background-size: 100% 100%;
+    background-position: center center;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden; /*....new....*/
+    
+}
+.overlay{
+   height:100%;
+   width:100%;
+   background-image:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.7), black );
+}
+
+.bannercontainer{ 
+    /*border:2px solid red;*/
+    height:80%;
+    width:100%;
+    position: absolute;
+    bottom:0;
+    left:0;
+    color:white;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bannercontainer h2{
+    font-size: 4rem;
+    /*border: 2px solid green;*/
+    width:780px;
+    text-align: center;
+}
+.bannercontainer h4{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.bannercontainer p{
+    font-size: 1rem;
+    margin: 20px;
+}
+.inputcontainer{
+    width:50%;
+    display: flex;
+    justify-content: space-around;
+}
+.emailinputbox{
+    border-radius: 50px;
+    padding:1rem 2rem;
+    border:1px solid  white;
+    outline:none;
+    background-color: rgba(255, 255, 255,0.3);
+    width: 400px; 
+    color: white;
+}
+.emailinputbox::placeholder{
+    color: rgba(255, 255, 255,1.9);
+    font-size: 1rem;
+}
+.getstarted{
+    width:30%;
+    background-color: red;
+    border-radius: none;
+    outline: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight:600;
+}
+@media (max-width:1488px) {
+    .bannerSection {
+        height:75vh;
+        width:100%;
+        margin-top: 2rem;
+    }
+    .bannercontainer{
+        height:70vh;
+    }
+    .bannercontainer h2 {
+        font-size: 3.5rem;
+        width: 90%;
+}
+@media (max-width:1200px) {
+    .bannerSection{
+        height:75vh;
+        
+    }
+    .bannercontainer h2{
+        font-size:3rem;
+        width:75%;
+        margin-top: 2rem;
+    }
+    .bannercontainer h4{
+        font-size:1.3rem;
+    }
+    .emailinputbox{
+        height:80%;
+        margin-right: 1rem;
+    }
+    .getstarted{
+        height:80%;
+        font-size: 1.2rem;
+        font-weight: 500;
+        width:40%;
+    }
+    .inputcontainer{
+        margin-bottom: 1rem;;
+    }
+}
+}
+
+.carouselSection h2{
+ /*  border:2px solid green;*/
+    color:rgb(247, 206, 195);
+    margin-left: 7rem;
+    margin-bottom: 2rem;
+}
+
+.caruosalcardcontainer {
+    /*border:2px solid red;*/
+    width:80%;
+    height:100%;
+    display:flex;
+    justify-content: space-around;
+    flex-shrink: 0;
+    gap:2rem;
+    margin:auto;
+   
+    
+}
+.carousalcard{
+    width:12%;/*border:2px solid yellow;*/
+    height:35vh;
+    border-radius: 20px;
+    position:relative;
+    overflow:hidden;
+    flex-shrink: 0;
+
+}
+.carousalimagecontainer{
+    width:100%;
+    height:100%;
+
+}
+.carousalimagecontainer img{
+    width:100%;
+    height:100%;
+    border-radius: 20px;
+}
+
+.carousalNumberContainer{
+    position: absolute;
+    top:10px;
+    left:-4px;
+    z-index:10;
+}
+.carousalNumberContainer span{
+    color: rgba(0, 0, 0, 0.8);
+    -webkit-text-stroke: 0.125rem rgb(255, 255, 255);
+    text-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5);
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+@media (max-width:1200px){
+.caruosalcardcontainer{
+    overflow: hidden;
+}
+.carousalcard{
+    width:12%;/*border:2px solid yellow;*/
+    height:35vh;
+}
+.carousalimagecontainer{
+    width:100%;
+    height:100%;
+
+}
+.carousalimagecontainer img{
+    width:100%;
+    height:100%;
+    border-radius: 20px;
+}
+.carousalimagecontainer img{
+    width:100%;
+    height:100%;
+    overflow: hidden;
+}
+.carousalcard{
+    width:12%;/*border:2px solid yellow;*/
+    height:35vh;
+    flex-shrink: 0;
+}
+.carouselSection h2{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+}
+.reasontojoincontainer{
+    width:80%;
+    /*height:100%;**/
+    display:flex;
+    justify-content: space-around;
+    gap:1rem;
+    margin:auto;
+    /*flex-wrap: wrap;*/
+}
+.reasonToJoinsection h2{
+    color: rgb(252, 238, 235);
+    margin-left: 7rem;
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+}
+.reasoncard{
+    min-height:32vh;
+    width:24%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:2rem 1rem 1rem;
+    border-radius: 20px;
+    color:white;
+    border:none;
+    background-color: rgb(48, 48, 48);
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.reasoncard h4{
+    font-size:1.2rem;
+    padding-bottom: 5px;
+}
+.reasoncard p{
+    font-size:1.1rem;
+    color:rgb(156, 155, 155);
+    padding-bottom: 5px;
+    line-height: 1.3rem;
+    flex-grow: 1;
+}
+.reasonlowercontent{
+    display: flex;
+    justify-content: flex-end;
+}
+.reasonlowercontent svg{
+    font-size: .5rem;
+    height:50px;
+    width:50px;
+    flex-shrink: 0;
+ 
+}
+@media (max-width:1400px) {
+    .reasoncard{
+        min-height:35vh;
+        width:24%;
+    }
+    .reasoncard h4{
+        font-size:1.1rem;
+        padding-bottom: 5px;
+    }
+    .reasoncard p{
+        font-size:1rem;
+    }
+}
+@media (max-width:1200px) {
+    .reasoncard{
+        min-height:31vh;
+        width:24%;
+    }
+    .reasoncard h4{
+        font-size:1.1rem;
+        padding-bottom: 5px;
+    }
+    .reasoncard p{
+        font-size:.9rem;
+    }
+}
+@media (max-width:992px) {
+    .reasoncard{
+        min-height:30vh;
+        width:20%;
+    }
+    .reasoncard h4{
+        font-size:1rem;
+        padding-bottom: 5px;
+    }
+    .reasoncard p{
+        font-size:.8rem;
+    }
+    .reasonlowercontent svg{
+        font-size: .4rem;
+        height:45px;
+        width:45px;
+        flex-shrink: 0;}
+}
+.faqSection {
+    color: white;
+}
+
+.faqSection h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: rgb(252, 238, 235);
+    margin-left: 7rem;
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+
+}
+
+.faqcardcontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+    margin-left: 7rem;
+    margin-right: 100px;
+}
+
+.faqcard {
+    margin-bottom: .1rem;
+    color: white;
+    border: none;
+}
+
+.faqbutton {
+    background-color: #272727;
+    color: white;
+    border: none;
+    padding: 1.2rem;
+    border-radius: 20px;
+    width: 100%;
+    text-align: left;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.faqbutton:hover {
+    background-color: #555;
+}
+
+.collapse {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #444;
+    border-radius: 15px;
+}
+
+.collapse p {
+    margin: 0;
+}
+.plus-sign{
+    font-size: 1.5rem;
+}
+.collapse.show .plus-sign {
+    content: "X"; 
+}
+.startercontainer p{
+   /* border: 2px solid red;  /* This is for debugging purposes */
+    color:rgb(214, 214, 214);
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    font-size: 1rem;
+    font-size: 1rem;
+    margin-bottom: 1.1rem;
+    background-color: transparent;
+} 
+      
+.getStartedSection{
+    padding: 4rem 2rem 2rem;
+
+}
+
+.log{
+    /*border: 2px solid green;*/
+    display: flex;
+    justify-content: center;
+    height:80%;
+}  
+.startButton{
+    width:17%;
+    background-color: red;
+    border-radius: none;
+    outline: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight:600;
+    margin-left: 1rem;;
+}
+.e-mailbox{
+    border-radius: 50px;
+    padding:1rem 2rem;
+    border:1px solid  rgb(161, 160, 160);
+    outline:none;
+    background-color: rgba(255, 255, 255,0.3);
+    width: 350px; 
+    color: white;
+}
+.e-mailbox::placeholder{
+    color: rgba(255, 255, 255,1.9);
+    font-size: 1rem;
+}
+
+.footercontainer p{
+    color: #717171;
+    margin-left: 7rem;
+    margin-top:0;
+    width:85%;
+    font-size: 0.9rem;
+}
+.footercontainer p a{
+    color: #717171;
+}
+.list-unstyled a{
+    margin-left: 7rem;
+    margin-top:0;
+    width:85%;
+    color:#717171;
+    font-size: 0.9rem;
+    
+}
+.languageopter{
+    margin-left: 2.1rem;
+    margin-top:0;
+    color:#717171;
+}
+.last{
+    width:80%;
+    padding:1rem;
+    margin-left: 1.8rem;
+}
